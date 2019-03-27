@@ -298,8 +298,320 @@ nydt</code></pre>
 <pre><code>[1] &quot;2019-03-27 03:26:00 EDT&quot;</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYXNcbmBgYCJ9 -->
+<pre class="r"><code>as</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYSA8LSBjKDEsIDUsIC0zKVxuYiA8LSBjKDAuNSwgMTIsIDIpXG5gYGAifQ== -->
+<pre class="r"><code>a &lt;- c(1, 5, -3)
+b &lt;- c(0.5, 12, 2)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYUwgPC0gYygxTCwgNUwsIC0zTClcbmJMIDwtIGMoLTJMLCAtNEwsIDhMKVxuYGBgIn0= -->
+<pre class="r"><code>aL &lt;- c(1L, 5L, -3L)
+bL &lt;- c(-2L, -4L, 8L)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYV5iXG5gYGAifQ== -->
+<pre class="r"><code>a^b</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdICAgICAgICAgMSAyNDQxNDA2MjUgICAgICAgICA5XG4ifQ== -->
+<pre><code>[1]         1 244140625         9</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYSAlJSBiXG5gYGAifQ== -->
+<pre class="r"><code>a %% b</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAgNSAxXG4ifQ== -->
+<pre><code>[1] 0 5 1</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudHdEYXRlVGltZSA8LSB5bWRfaG1zKFwiMjAxOS0wMy0xOCAxNDowNDowMFwiLCB0ej1cIkFzaWEvVGFpcGVpXCIpXG5gYGAifQ== -->
+<pre class="r"><code>twDateTime &lt;- ymd_hms(&quot;2019-03-18 14:04:00&quot;, tz=&quot;Asia/Taipei&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYSA8LSBjKDEsIDUsIC0zKVxuYiA8LSBjKDAuNSwgMTIsIDIpXG5hTCA8LSBjKDFMLCA1TCwgLTNMKVxuYkwgPC0gYygtMkwsIC00TCwgOEwpXG5hK2JcbmBgYCJ9 -->
+<pre class="r"><code>a &lt;- c(1, 5, -3)
+b &lt;- c(0.5, 12, 2)
+aL &lt;- c(1L, 5L, -3L)
+bL &lt;- c(-2L, -4L, 8L)
+a+b</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdICAxLjUgMTcuMCAtMS4wXG4ifQ== -->
+<pre><code>[1]  1.5 17.0 -1.0</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYWFMIDwtIGErYUxcbmNsYXNzKGFhTClcbmBgYCJ9 -->
+<pre class="r"><code>aaL &lt;- a+aL
+class(aaL)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwibnVtZXJpY1wiXG4ifQ== -->
+<pre><code>[1] &quot;numeric&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudHdEYXRlVGltZVxuYGBgIn0= -->
+<pre class="r"><code>twDateTime</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiMjAxOS0wMy0xOCAxNDowNDowMCBDU1RcIlxuIn0= -->
+<pre><code>[1] &quot;2019-03-18 14:04:00 CST&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudHdEYXRlVGltZSsxXG5gYGAifQ== -->
+<pre class="r"><code>twDateTime+1</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiMjAxOS0wMy0xOCAxNDowNDowMSBDU1RcIlxuIn0= -->
+<pre><code>[1] &quot;2019-03-18 14:04:01 CST&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYStiTFxuYGBgIn0= -->
+<pre class="r"><code>a+bL</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIC0xICAxICA1XG4ifQ== -->
+<pre><code>[1] -1  1  5</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY2xhc3MoYStiTClcbmBgYCJ9 -->
+<pre class="r"><code>class(a+bL)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwibnVtZXJpY1wiXG4ifQ== -->
+<pre><code>[1] &quot;numeric&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYUwrYkxcbmBgYCJ9 -->
+<pre class="r"><code>aL+bL</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIC0xICAxICA1XG4ifQ== -->
+<pre><code>[1] -1  1  5</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY2xhc3MoYUwrYkwpXG5gYGAifQ== -->
+<pre class="r"><code>class(aL+bL)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiaW50ZWdlclwiXG4ifQ== -->
+<pre><code>[1] &quot;integer&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY2xhc3MoYUwqYkwpXG5gYGAifQ== -->
+<pre class="r"><code>class(aL*bL)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiaW50ZWdlclwiXG4ifQ== -->
+<pre><code>[1] &quot;integer&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY2xhc3MoYUwvYkwpXG5gYGAifQ== -->
+<pre class="r"><code>class(aL/bL)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwibnVtZXJpY1wiXG4ifQ== -->
+<pre><code>[1] &quot;numeric&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYXMuaW50ZWdlcih0d0RhdGVUaW1lKVxuYGBgIn0= -->
+<pre class="r"><code>as.integer(twDateTime)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDE1NTI4ODkwNDBcbiJ9 -->
+<pre><code>[1] 1552889040</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<div class="section level1">
+<h1>時間是以數字作儲存，可以相減不可相加</h1>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3RhcnRpbmdEYXRlIDwtIHltZChcIjIwMDAtMDItMTdcIilcbmBgYCJ9 -->
+<pre class="r"><code>startingDate &lt;- ymd(&quot;2000-02-17&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3RhcnRpbmdEYXRlICsgeWVhcnMoMSlcbmBgYCJ9 -->
+<pre class="r"><code>startingDate + years(1)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiMjAwMS0wMi0xN1wiXG4ifQ== -->
+<pre><code>[1] &quot;2001-02-17&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3RhcnRpbmdEYXRlICsgZHllYXJzKDEpXG5gYGAifQ== -->
+<pre class="r"><code>startingDate + dyears(1)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiMjAwMS0wMi0xNlwiXG4ifQ== -->
+<pre><code>[1] &quot;2001-02-16&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<div id="relational" class="section level2">
+<h2>relational</h2>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxueCA8LSA1XG55IDwtIDdcbngyIDwtIGMoMSw1LDEwKVxueTIgPC0gYygtMSw1LDIwKVxuYGBgIn0= -->
+<pre class="r"><code>x &lt;- 5
+y &lt;- 7
+x2 &lt;- c(1,5,10)
+y2 &lt;- c(-1,5,20)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxueCA+PSB5IFxuYGBgIn0= -->
+<pre class="r"><code>x &gt;= y </code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIEZBTFNFXG4ifQ== -->
+<pre><code>[1] FALSE</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxueCA9PSB5IFxuYGBgIn0= -->
+<pre class="r"><code>x == y </code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIEZBTFNFXG4ifQ== -->
+<pre><code>[1] FALSE</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxueCA8IHkgXG5gYGAifQ== -->
+<pre class="r"><code>x &lt; y </code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFRSVUVcbiJ9 -->
+<pre><code>[1] TRUE</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxueCA9IHlcbmBgYCJ9 -->
+<pre class="r"><code>x = y</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxueDJcbnkyXG54MiA8IHkyXG5gYGAifQ== -->
+<pre class="r"><code>x2
+y2
+x2 &lt; y2</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxueDIgPiA0IFxuYGBgIn0= -->
+<pre class="r"><code>x2 &gt; 4 </code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIEZBTFNFICBUUlVFICBUUlVFXG4ifQ== -->
+<pre><code>[1] FALSE  TRUE  TRUE</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxueDMgPC0gYyhcIuWwj+aYjlwiLFwi5bCP6IqxXCIpXG55MyA8LSBjKFwi5bCP5piOXCIsXCLlsI/oj69cIilcbmBgYCJ9 -->
+<pre class="r"><code>x3 &lt;- c(&quot;小明&quot;,&quot;小花&quot;)
+y3 &lt;- c(&quot;小明&quot;,&quot;小華&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxueDUgPC0gYyhcIuWPsOWMl+W4glwiLFwi5paw5YyX5biCXCIpXG55NSA8LSBjKFwi5Y+w5YyX5biCXCIsXCLmlrDljJfluIJcIilcblxueDVcbnk1XG54NSAlaW4lIHk1XG5gYGAifQ== -->
+<pre class="r"><code>x5 &lt;- c(&quot;台北市&quot;,&quot;新北市&quot;)
+y5 &lt;- c(&quot;台北市&quot;,&quot;新北市&quot;)
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKYGBge3J9CmxpYnJhcnkobHVicmlkYXRlKQpgYGAKCmBgYHtyfQpkdE9iamVjdDwteW1kX2htcygiMTk3MC0wMS0wMSAwMDowMjo1MyIpIApgYGAKCmBgYHtyfQpkdE9iamVjdFZlY3RvcjwteW1kX2htcygKICBjKCIxOTcwLTAxLTAxIDAwOjAyOjUzIiwKICAgICIxOTgwLTAyLTExIDExOjI1OjIyIikKKQpgYGAKCmBgYHtyfQpTeXMudGltZXpvbmUoKQpgYGAKCmBgYHtyfQp0d0RhdGVUaW1lIDwtIHltZF9obXMoIjIwMTktMDMtMjcgMTU6Mjg6MDAiLCB0ej0iQXNpYS9UYWlwZWkiKQpgYGAKCmBgYHtyfQp4TGlzYm9uRGF0ZVRpbWUgPC0gd2l0aF90eih0d0RhdGVUaW1lLHR6b25lPSJFdXJvcGUvTGlzYm9uIikKYGBgCgoKYGBge3J9CnR3ZHQ8LXltZF9obXMoIjIwMTktMDMtMjcgMTU6MjY6MDAiLCB0ej0iQXNpYS9UYWlwZWkiKQpueWR0PC13aXRoX3R6KHR3ZHQsdHpvbmUgPSAiQW1lcmljYS9OZXdfWW9yayIpCm55ZHQKYGBgCg==</div>
+x5
+y5
+x5 %in% y5</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxueDUgPC0gYyhcIuWPsOWMl+W4glwiLFwi5paw5YyX5biCXCIsXCLpq5jpm4TluIJcIilcbnk1IDwtIGMoXCLlj7DljJfluIJcIixcIuaWsOWMl+W4glwiKVxueDUgJWluJSB5NVxuYGBgIn0= -->
+<pre class="r"><code>x5 &lt;- c(&quot;台北市&quot;,&quot;新北市&quot;,&quot;高雄市&quot;)
+y5 &lt;- c(&quot;台北市&quot;,&quot;新北市&quot;)
+x5 %in% y5</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdICBUUlVFICBUUlVFIEZBTFNFXG4ifQ== -->
+<pre><code>[1]  TRUE  TRUE FALSE</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxueDIgPC0gYygxLE5BLDEwKVxueTIgPC0gYygtMSxOQSwyMClcbngzIDwtIGMoTkEsXCLlsI/oirFcIilcbnkzIDwtIGMoTkEsXCLlsI/oj69cIilcbmBgYCJ9 -->
+<pre class="r"><code>x2 &lt;- c(1,NA,10)
+y2 &lt;- c(-1,NA,20)
+x3 &lt;- c(NA,&quot;小花&quot;)
+y3 &lt;- c(NA,&quot;小華&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxueDJcbmBgYCJ9 -->
+<pre class="r"><code>x2</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdICAxIE5BIDEwXG4ifQ== -->
+<pre><code>[1]  1 NA 10</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaXMubmEoeDIpXG5gYGAifQ== -->
+<pre class="r"><code>is.na(x2)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIEZBTFNFICBUUlVFIEZBTFNFXG4ifQ== -->
+<pre><code>[1] FALSE  TRUE FALSE</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudHdEYXRlVGltZVxuYGBgIn0= -->
+<pre class="r"><code>twDateTime</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiMjAxOS0wMy0xOCAxNDowNDowMCBDU1RcIlxuIn0= -->
+<pre><code>[1] &quot;2019-03-18 14:04:00 CST&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3VtKHgyKVxuYGBgIn0= -->
+<pre class="r"><code>sum(x2)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIE5BXG4ifQ== -->
+<pre><code>[1] NA</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3VtKHgyLG5hLnJtPUYpXG5gYGAifQ== -->
+<pre class="r"><code>sum(x2,na.rm=F)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIE5BXG4ifQ== -->
+<pre><code>[1] NA</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3VtKHgyLG5hLnJtPVQpXG5gYGAifQ== -->
+<pre class="r"><code>sum(x2,na.rm=T)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDExXG4ifQ== -->
+<pre><code>[1] 11</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+</div>
+</div>
+
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKYGBge3J9CmxpYnJhcnkobHVicmlkYXRlKQpgYGAKCmBgYHtyfQpkdE9iamVjdDwteW1kX2htcygiMTk3MC0wMS0wMSAwMDowMjo1MyIpIApgYGAKCmBgYHtyfQpkdE9iamVjdFZlY3RvcjwteW1kX2htcygKICBjKCIxOTcwLTAxLTAxIDAwOjAyOjUzIiwKICAgICIxOTgwLTAyLTExIDExOjI1OjIyIikKKQpgYGAKCmBgYHtyfQpTeXMudGltZXpvbmUoKQpgYGAKCmBgYHtyfQp0d0RhdGVUaW1lIDwtIHltZF9obXMoIjIwMTktMDMtMjcgMTU6Mjg6MDAiLCB0ej0iQXNpYS9UYWlwZWkiKQpgYGAKCmBgYHtyfQp4TGlzYm9uRGF0ZVRpbWUgPC0gd2l0aF90eih0d0RhdGVUaW1lLHR6b25lPSJFdXJvcGUvTGlzYm9uIikKYGBgCgoKYGBge3J9CnR3ZHQ8LXltZF9obXMoIjIwMTktMDMtMjcgMTU6MjY6MDAiLCB0ej0iQXNpYS9UYWlwZWkiKQpueWR0PC13aXRoX3R6KHR3ZHQsdHpvbmUgPSAiQW1lcmljYS9OZXdfWW9yayIpCm55ZHQKYGBgCgpgYGB7cn0KYXMKYGBgCgoKYGBge3J9CmEgPC0gYygxLCA1LCAtMykKYiA8LSBjKDAuNSwgMTIsIDIpCmBgYAoKYGBge3J9CmFMIDwtIGMoMUwsIDVMLCAtM0wpCmJMIDwtIGMoLTJMLCAtNEwsIDhMKQpgYGAKYGBge3J9CmFeYgphICUlIGIKYGBgCgpgYGB7cn0KdHdEYXRlVGltZSA8LSB5bWRfaG1zKCIyMDE5LTAzLTE4IDE0OjA0OjAwIiwgdHo9IkFzaWEvVGFpcGVpIikKYGBgCgpgYGB7cn0KYSA8LSBjKDEsIDUsIC0zKQpiIDwtIGMoMC41LCAxMiwgMikKYUwgPC0gYygxTCwgNUwsIC0zTCkKYkwgPC0gYygtMkwsIC00TCwgOEwpCmErYgphYUwgPC0gYSthTApjbGFzcyhhYUwpCmBgYAoKYGBge3J9CnR3RGF0ZVRpbWUKdHdEYXRlVGltZSsxCmBgYAoKYGBge3J9CmErYkwKY2xhc3MoYStiTCkKCmFMK2JMCmNsYXNzKGFMK2JMKQoKY2xhc3MoYUwqYkwpCmNsYXNzKGFML2JMKQpgYGAKCmBgYHtyfQphcy5pbnRlZ2VyKHR3RGF0ZVRpbWUpCmBgYAoKCiPmmYLplpPmmK/ku6XmlbjlrZfkvZzlhLLlrZjvvIzlj6/ku6Xnm7jmuJvkuI3lj6/nm7jliqAKYGBge3J9CnN0YXJ0aW5nRGF0ZSA8LSB5bWQoIjIwMDAtMDItMTciKQpgYGAKYGBge3J9CnN0YXJ0aW5nRGF0ZSArIHllYXJzKDEpCmBgYAoKYGBge3J9CnN0YXJ0aW5nRGF0ZSArIGR5ZWFycygxKQpgYGAKCiMjIHJlbGF0aW9uYWwgCgoKYGBge3J9CnggPC0gNQp5IDwtIDcKeDIgPC0gYygxLDUsMTApCnkyIDwtIGMoLTEsNSwyMCkKYGBgCgpgYGB7cn0KeCA+PSB5IAp4ID09IHkgCnggPCB5IApgYGAKCmBgYHtyfQp4ID0geQpgYGAKCgpgYGB7cn0KeDIKeTIKeDIgPCB5MgpgYGAKCgoKCgoKYGBge3J9CngyID4gNCAKYGBgCgpgYGB7cn0KeDMgPC0gYygi5bCP5piOIiwi5bCP6IqxIikKeTMgPC0gYygi5bCP5piOIiwi5bCP6I+vIikKYGBgCgoKYGBge3J9Cng1IDwtIGMoIuWPsOWMl+W4giIsIuaWsOWMl+W4giIpCnk1IDwtIGMoIuWPsOWMl+W4giIsIuaWsOWMl+W4giIpCgp4NQp5NQp4NSAlaW4lIHk1CmBgYAoKYGBge3J9Cng1IDwtIGMoIuWPsOWMl+W4giIsIuaWsOWMl+W4giIsIumrmOmbhOW4giIpCnk1IDwtIGMoIuWPsOWMl+W4giIsIuaWsOWMl+W4giIpCgp4NSAlaW4lIHk1CmBgYAoKCmBgYHtyfQp4MiA8LSBjKDEsTkEsMTApCnkyIDwtIGMoLTEsTkEsMjApCgp4MyA8LSBjKE5BLCLlsI/oirEiKQp5MyA8LSBjKE5BLCLlsI/oj68iKQpgYGAKCmBgYHtyfQp4Mgppcy5uYSh4MikKCmBgYAoKYGBge3J9CnR3RGF0ZVRpbWUKYGBgCgpgYGB7cn0Kc3VtKHgyKQpzdW0oeDIsbmEucm09RikKc3VtKHgyLG5hLnJtPVQpCmBgYAoKCgoKCgoKCgoKCgoKCgoKCg==</div>
 
 
 

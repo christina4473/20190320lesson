@@ -36,3 +36,169 @@ twdt<-ymd_hms("2019-03-27 15:26:00", tz="Asia/Taipei")
 nydt<-with_tz(twdt,tzone = "America/New_York")
 nydt
 ```
+
+```{r}
+as
+```
+
+
+```{r}
+a <- c(1, 5, -3)
+b <- c(0.5, 12, 2)
+```
+
+```{r}
+aL <- c(1L, 5L, -3L)
+bL <- c(-2L, -4L, 8L)
+```
+```{r}
+a^b
+a %% b
+```
+
+```{r}
+twDateTime <- ymd_hms("2019-03-18 14:04:00", tz="Asia/Taipei")
+```
+
+```{r}
+a <- c(1, 5, -3)
+b <- c(0.5, 12, 2)
+aL <- c(1L, 5L, -3L)
+bL <- c(-2L, -4L, 8L)
+a+b
+aaL <- a+aL
+class(aaL)
+```
+
+```{r}
+twDateTime
+twDateTime+1
+```
+
+```{r}
+a+bL
+class(a+bL)
+
+aL+bL
+class(aL+bL)
+
+class(aL*bL)
+class(aL/bL)
+```
+
+```{r}
+as.integer(twDateTime)
+```
+
+
+#時間是以數字作儲存，可以相減不可相加
+```{r}
+startingDate <- ymd("2000-02-17")
+```
+```{r}
+startingDate + years(1)
+```
+
+```{r}
+startingDate + dyears(1)
+```
+
+## relational 
+
+
+```{r}
+x <- 5
+y <- 7
+x2 <- c(1,5,10)
+y2 <- c(-1,5,20)
+```
+
+```{r}
+x >= y 
+x == y 
+x < y 
+```
+
+```{r}
+x = y
+```
+
+
+```{r}
+x2
+y2
+x2 < y2
+```
+
+
+
+
+
+
+```{r}
+x2 > 4 
+```
+
+```{r}
+x3 <- c("小明","小花")
+y3 <- c("小明","小華")
+```
+
+
+```{r}
+x5 <- c("台北市","新北市")
+y5 <- c("台北市","新北市")
+
+x5
+y5
+x5 %in% y5
+```
+
+```{r}
+x5 <- c("台北市","新北市","高雄市")
+y5 <- c("台北市","新北市")
+
+x5 %in% y5
+```
+
+
+```{r}
+x2 <- c(1,NA,10)
+y2 <- c(-1,NA,20)
+
+x3 <- c(NA,"小花")
+y3 <- c(NA,"小華")
+```
+
+```{r}
+x2
+is.na(x2)
+
+```
+
+```{r}
+twDateTime
+```
+
+```{r}
+sum(x2)
+sum(x2,na.rm=F)
+sum(x2,na.rm=T)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
