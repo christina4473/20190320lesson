@@ -1,0 +1,38 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(lubridate)
+```
+
+```{r}
+dtObject<-ymd_hms("1970-01-01 00:02:53") 
+```
+
+```{r}
+dtObjectVector<-ymd_hms(
+  c("1970-01-01 00:02:53",
+    "1980-02-11 11:25:22")
+)
+```
+
+```{r}
+Sys.timezone()
+```
+
+```{r}
+twDateTime <- ymd_hms("2019-03-27 15:28:00", tz="Asia/Taipei")
+```
+
+```{r}
+xLisbonDateTime <- with_tz(twDateTime,tzone="Europe/Lisbon")
+```
+
+
+```{r}
+twdt<-ymd_hms("2019-03-27 15:26:00", tz="Asia/Taipei")
+nydt<-with_tz(twdt,tzone = "America/New_York")
+nydt
+```
